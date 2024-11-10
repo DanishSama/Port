@@ -56,4 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 500);  // ดีเลย์เล็กน้อยเพื่อให้การแสดงผลดูเป็นธรรมชาติ
     });
   });
-  
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });  
