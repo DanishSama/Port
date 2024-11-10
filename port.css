@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Modak&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Griffy&family=Irish+Grover&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vibur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Griffy&family=Irish+Grover&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Colors */
+    --white-color: white;
+    --dark-color: rgb(43, 43, 43);
+    --primmary-color:  #e51c23;
+    --secondary-color: #9e9e9e ;
+    --light-pink-color: rgb(255, 191, 202);
+    --medium-gray-color: #ccc;
+    --about-us-color: orange;
+
+    /* Font Size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.3rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.2rem;
+
+    /* Font weight */
+    --font-weight-noraml: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+     /* Border radius */
+     --border-radius-s: 8px;
+     --border-radius-m: 30px;
+     --border-radius-circle: 50%;
+
+     /* Site max width */
+     --site-max-width: 1100px:
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Stling for whole site*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 90%;
+}
+
+.section-content{
+   margin: 0 auto;
+   padding: 0 20px;
+   max-width: 1130px;
+}
+
+.section-title{
+  text-align: center;
+  padding: 10px 0 50px;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.section-title::after{
+    content: "";
+    width: 100px;
+    height: 6px;
+    display: block;
+    margin: 3px auto 0;
+    border-radius: var(--border-radius-s);
+    background: #ffffff;
+}
+
+.section-title1{
+    text-align: center;
+    padding: 10px 0 50px;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+  }
+  .section-title1::after{
+      content: "";
+      width: 100px;
+      height: 6px;
+      display: block;
+      margin: 3px auto 0;
+      border-radius: var(--border-radius-s);
+      background: #ffffff;
+  }
+
+  .section-title2{
+    text-align: center;
+    padding: 10px 0 50px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  .section-title2::after{
+      content: "";
+      width: 100px;
+      height: 6px;
+      display: block;
+      margin: 3px auto 0;
+      border-radius: var(--border-radius-s);
+      background: #000000;
+  }
+
+  
+  .section-title3{
+    text-align: center;
+    padding: 10px 0 50px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+  .section-title3::after{
+      content: "";
+      width: 100px;
+      height: 6px;
+      display: block;
+      margin: 3px auto 0;
+      border-radius: var(--border-radius-s);
+      background: #000000;
+  }
+
+  .section-title4{
+    text-align: center;
+    padding: 10px 0 50px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  .section-title4::after{
+      content: "";
+      width: 200px;
+      height: 5px;
+      display: block;
+      margin: 2px auto 0;
+      background: #000000;
+  }
+
+
+/* Navbar styling */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primmary-color);
+}
+header .navbar{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Irish Grover", serif;
+    color: #ffffff;
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 35px;
+}
+.navbar .nav-menu .nav-link{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    transition: 300ms;
+    padding: 6px;
+    border-radius: 15px;
+    transition: 0.3 ease;
+    font-family: "Irish Grover", serif;
+    
+}
+.navbar .nav-menu .nav-link:hover{
+    color: #78909c;
+    background: var(--primmary-color);
+}
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+
+/* Hero Section*/
+.hero-section{
+    min-height: 100vh;
+    background: var(--primmary-color);
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    justify-content: space-between;
+   
+}
+.hero-section .hero-details .title {
+    font-size: 3rem;
+    color: rgb(49, 49, 49);
+    font-weight: 700;
+    margin-top: 40px;
+}
+.hero-section .hero-details .subtitle {
+    margin-top: 5px;
+    max-width: 80%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+.hero-section .hero-details .description {
+    max-width: 70%;
+    margin: 13px 0 30px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: "Irish Grover", serif;
+    color: var(--secondary-color);
+}
+
+.hero-section .hero-details .button {
+    border: 3px solid transparent;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6d0a0a;
+    border-radius: var(--border-radius-m);
+    background: black;
+    transition: 0.3s ease;
+}
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+    color: rgb(49, 49, 49);
+    border-color: rgb(49, 49, 49);
+    background: var(--secondary-color);
+}
+.hero-section .hero-details .contact-us:hover{
+    color: var(--secondary-color);
+    border-color: var(--primmary-color);
+    background: rgb(49, 49, 49);
+}
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 20px;
+} 
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+
+/* Education section*/
+.teacher-section{
+    padding: 30px 0 100px;
+    background: rgb(231, 231, 231);
+}
+.teacher-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+.teacher-section .teacher {
+    user-select: none;
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.teacher-section .teacher .user-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.teacher-section .teacher .name{
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+.teacher-section .teacher .feedback{
+     line-height: 25px;
+     font-size: 1.2rem;
+     font-weight: 500;
+}
+.teacher-section .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: #000000;
+}
+.teacher-section .swiper-slide-button {
+    margin-top: -50px;
+    color: #000000;
+    transition: 0.3s ease;
+}
+.teacher-section .swiper-slide-button:hover {
+    color: rgb(0, 0, 121);
+}
+.teacher-pp{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+
+/*  skills styling */
+.skills-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+  
+  }
+  
+  .skill {
+    margin-bottom: 30px;
+  }
+  
+  .skill-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* ต้องใช้เพื่อให้ข้อความอยู่บนแถบ */
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0; /* เริ่มต้นที่ 0% */
+    background-color: #4caf50;
+    border-radius: 10px;
+    position: relative;
+    transition: width 2s ease-in-out;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* จัดข้อความให้อยู่กลาง */
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+
+
+/* About section styling*/
+.about-section{
+  padding: 10px 0;
+  background: #2f2f2f;
+}
+.about-section .section-content{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-section .about-details .section-title{
+    padding: 0;
+}
+.about-section .about-details{
+    max-width: 50%;
+}
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.about-section .social-link-list{
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+}
+.about-section .social-link-list .social-link{
+    color: rgb(0, 0, 255);
+    font-size: 4rem;
+    margin-top: 15px;
+    transition: 0.2 ease;
+}
+.about-section .social-link-list .social-link:hover{
+   color: rgb(255, 255, 255);
+}
+
+.about-section .social-link-list .social-link2{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    margin-top: 15px;
+    transition: 0.2 ease;
+}
+.about-section .social-link-list .social-link2:hover{
+   color: rgb(255, 255, 255);
+}
+.about-section .social-link-list .social-link3{
+    color: rgb(255, 0, 98);
+    font-size: 4rem;
+    margin-top: 15px;
+    transition: 0.2 ease;
+}
+.about-section .social-link-list .social-link3:hover{
+   color: rgb(255, 255, 255);
+}
+.span-text{
+    color: #fb8c00;
+}
+
+
+
+/* Menu section styling */
+.menu-section{
+    color: white;
+    background: var(--primmary-color);
+    padding: 50px 0 100px;
+}
+.menu-section .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   justify-content: space-between;
+   width: calc(100% / 3 - 50px); 
+}
+
+.menu-section .menu-list .menu-item .menu-image{
+    max-width: 80%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+.menu-section .menu-list .menu-item .name{
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+.menu-section .menu-list .menu-item .text{
+    font-size: var(--font-size-m);
+}
+
+
+/* Gallery section*/
+.gallery-section{
+    padding: 50px 0 100px;
+    background: #80d6fd;
+}
+.gallery-section .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.gallery-section .gallery-list .gallery-item{
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+    width: calc(100% / 3 - 32px);
+}
+.gallery-section .gallery-item .gallery-image{
+    width: 100%;
+    border-radius: var(--border-radius-s);
+    cursor: zoom-in;
+    transition: 0.3 ease;
+}
+.gallery-section .gallery-item:hover .gallery-image{
+    transform: scale(1.3);
+}
+
+
+
+/* Contact us section styling*/
+.contact-section{
+    padding: 40px 0 20px;
+    background-color: #e7e7e7;
+}
+
+.contact-section .contact-info-list .contact-info{
+    display: flex;
+    gap: 40px;
+    margin: 15px 0;
+    align-items: center;
+  
+}
+.contact-section .contact-info-list .contact-info i{
+    font-size: 2.5rem;
+}
+.contact-section .contact-info-list .contact-info p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.contact-p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.contact-h2{
+    font-size: 1.7rem;
+}
+
+/* Footer section*/
+.footer-section{
+    padding: 15px 0;
+    background: #171717;
+}
+.footer-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-section :where(.copyright-text,
+.social-link, .policy-link) {
+    color: white;
+}
+.footer-section .social-link-list{
+    display: flex;
+    gap: 25px;
+}
+.footer-section .social-link-list .social-link{
+    font-size: 1.6rem;
+
+}
+.footer-section .social-link-list .social-link:hover,
+.footer-section  .policy-text .policy-link:hover{
+    color: rgb(0, 149, 255);
+}
+.footer-section  .policy-text .separator{
+   color: white;
+   margin: 0 5px;
+}
+/* Responsive media query code for max width 1024px*/
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+  .menu-section .menu-list .menu-item{
+    width: calc(100% / 2 - 30px); 
+  }
+}
+
+/* Responsive media query code for max width 900px*/
+@media screen and (max-width: 900px) {
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.2rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        display: block;
+        font-size: 2rem;
+    }
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+   
+    .navbar #menu-open-button {
+      color: var(--white-color);
+    }
+    .navbar .nav-menu{
+       display: block;
+       position: fixed;
+       left: -300px;
+       top: 0;
+       width: 300px;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 10px;
+       background: var(--white-color);
+       transition: 0.3s ease;
+    }
+    body.show-mobile-menu .navbar .nav-menu{
+       left: 0;
+    } 
+    .navbar .nav-menu .nav-link{
+        color: rgb(0, 0, 0);
+        display: block;
+        margin-top: 15px;
+        font-size: 1.3rem;
+    }
+    .hero-section .section-content{
+        gap: 10px;
+        text-align: center;
+        padding: 10px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .hero-section .hero-details :is(.subtitle,.description)
+    ,.about-section.about-details{
+        max-width: 100%;
+    }
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .about-section .section-content{
+        gap: 60px;
+        flex-direction: column;
+    }
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 350px;
+        aspect-ratio: 1;
+    }
+
+    .menu-section .menu-list{
+        gap: 30px;
+    }
+  .menu-section .menu-list .menu-item{
+    width: calc(100% / 2 - 30px); 
+  }
+  .menu-section .menu-list .menu-item .menu-image{
+    max-width: 200px;
+  }
+  .gallery-section .gallery-list{
+    gap: 30px;
+  }
+  .gallery-section .gallery-list .gallery-item{
+    width: calc(100% / 2 - 30px);
+  }
+  .contact-section .section-content{
+    flex-direction: column;
+  }
+  .skills-container {
+    width: 85%;
+  }
+
+  .skill-name {
+    font-size: 1.1em; /* ปรับขนาดข้อความชื่อทักษะ */
+  }
+
+  .skill-bar {
+    height: 18px; /* ปรับความสูงของแถบ */
+  }
+
+  .percentage {
+    font-size: 0.85em; /* ปรับขนาดตัวอักษรเปอร์เซ็นต์ */
+  }
+
+}
+
+/* Responsive media query code for max width 640px*/
+@media screen and(max-width: 600px) {
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+    .menu-section .menu-list .menu-item,
+    .gallery-section .gallery-list .gallery-item{
+        width: 100%;
+    }
+    .teacher-section .slider-wrapper{
+        margin: 0 0 30px;
+    }
+    .teacher-section .swiper-slide-button{
+        display: none;
+    }
+    .footer-section .section-content{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skills-container {
+        width: 90%;  /* ให้ container กว้างขึ้นในมือถือ */
+      }
+    
+      .skill-name {
+        font-size: 1em; /* ลดขนาดข้อความของชื่อทักษะ */
+      }
+    
+      .skill-bar {
+        height: 15px; /* ลดความสูงของแถบ */
+      }
+    
+      .percentage {
+        font-size: 0.8em; /* ลดขนาดตัวอักษรเปอร์เซ็นต์ */
+      }
+    
+}
